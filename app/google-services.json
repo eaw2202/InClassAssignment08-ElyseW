@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "855601664507",
+    "firebase_url": "https://inclassassignment08-elysew.firebaseio.com",
+    "project_id": "inclassassignment08-elysew",
+    "storage_bucket": "inclassassignment08-elysew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855601664507:android:d0db7078188a11a4",
+        "android_client_info": {
+          "package_name": "com.elysewarren.inclassassignment08_elysew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855601664507-a4tov3cvek63gsnvan1h7uui540h5fv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzRBjjhXh_tA2PgvxUtq0el6EPg9sLuZ4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
