@@ -7,10 +7,16 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Main2Activity extends AppCompatActivity {
     private EditText displayBreed;
     private EditText displayAge;
     private CheckBox checkBox;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference dogsRef = database.getReference("dogs");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +32,9 @@ public class Main2Activity extends AppCompatActivity {
         String dogName = displayBreed.getText().toString();
         int dogAge = Integer.parseInt(displayAge.getText().toString());
         boolean isAllergic = checkBox.isChecked();
-        Dog thatDog = new Dog(dogName, dogAge, isAllergic);
-        Intent dog = new Intent();
-        dog.putExtra(Keys.Dog, thatDog);
-        setResult(RESULT_OK, dog);
-        finish();
-
+        dogsRef.push().setValue(new Dog(dogName, dogAge, isAllergic));
+        Intent dog = new Intent(this, MainActivity.class);
+        startActivity(dog);
 
     }
 }

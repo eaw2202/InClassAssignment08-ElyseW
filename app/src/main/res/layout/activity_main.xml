@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    tools:context="com.elysewarren.inclassassignment08_elysew.MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp">
+    android:paddingTop="16dp"
+    tools:context="com.elysewarren.inclassassignment08_elysew.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,11 +39,10 @@
 
 
     <Button
-        android:id="@+id/add_dog"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center"
-        android:onClick="add_dog"
+        android:onClick="addDog"
         android:text="ADD ANOTHER DOG"
         android:textSize="15dp"
         android:textStyle="bold" />
